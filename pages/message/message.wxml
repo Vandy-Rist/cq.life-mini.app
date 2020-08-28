@@ -1,0 +1,17 @@
+<!--pages/message/message.wxml-->
+<view class="card">
+  <text class='card-title'>食品大促销</text>
+  <text class='card-date'>2019-09-25</text>
+  <image class="card-img" src="https://m.360buyimg.com/mobilecms/s1125x549_jfs/t14776/179/342502886/126892/bc618b9e/5a2a317dN2c57e7b0.jpg!q70.jpg" mode="aspectFill"></image>
+  <text class='card-desc'>优惠不要错过</text>
+  <text class='card-read'>查看详情</text>
+</view>
+
+<view class="card" wx:for="{{ msgList }}" wx:key="id">
+  <text class='card-title'>{{ item.title }}</text>
+  <text class='card-date'>{{ item.date}}</text>
+  <image class="card-img" src="{{ item.image }}" mode="aspectFill"></image>
+  <text class='card-desc'>{{ item.desc }}</text>
+  <text class='card-read'>查看详情</text>
+</view>
+
