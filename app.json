@@ -38,7 +38,7 @@
       },
       {
         "pagePath": "pages/contact/contact",
-        "text": "联系我",
+        "text": "注册",
         "iconPath": "assets/tabs/contact.png",
         "selectedIconPath": "assets/tabs/contact-active.png"
       }

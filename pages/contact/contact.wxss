@@ -1,1 +1,8 @@
 /* pages/contact/contact.wxss */
+.btn-area {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-area button {
+  margin: 30rpx 0;
+}

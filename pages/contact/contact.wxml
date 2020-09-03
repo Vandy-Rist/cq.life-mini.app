@@ -1,2 +1,31 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+<view class="divider"></view>
+<form catchsubmit="formSubmit" catchreset="formReset">
+  <view class='cell'>
+    <navigator class='cell-item'>
+        <text>用户注册</text>
+    </navigator>
+    <view class='cell-item'>
+        <input type='text' placeholder="用户名"></input>
+    </view>
+    <view class='cell-item'>
+        <input type='text' password placeholder="密码"></input>
+    </view>
+    <view class='cell-item'>
+        <input type='number' placeholder="年龄"></input>
+    </view>
+    <view class='cell-item'>
+        <radio-group bindchange="radioChangeHandle" data-para="参数">
+            <radio color="#13D1BE" checked value="male"></radio>男
+            <radio color="#13D1BE" value="female"></radio>女
+            <radio color="#13D1BE"></radio>保密
+        </radio-group>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>
+
+

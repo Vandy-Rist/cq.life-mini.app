@@ -1,2 +1,17 @@
 <!--pages/shopList/shopList.wxml-->
-<text>pages/shopList/shopList.wxml</text>
+<view class="shop" wx:for="{{ shopList }}" wx:key="id">
+  <image class="shop-img" src="{{ item.images[0] }}"></image>
+  <view class="shop-info">
+    <text class="shop-title ell">店铺名称：{{ item.name }}</text>
+    <text class="shop-tell">电话：{{ item.phone }} </text>
+    <text class="shop-address">地址：{{ item.address }}</text>
+    <text class="shop-time">营业时间：{{ item.businessHour }}</text>
+  </view>
+  <view class="shop-star">
+    <view class="star-after">★★★★★</view>
+    <view class="star-before" style="width:{{ item.score }}">★★★★★</view>
+  </view>
+</view>
+
+<view class="loadmore loading" wx:if="{{ hasMore }}">正在加载...</view>
+<view class="loadmore" wx:else>你已经到达我的底线了</view>
